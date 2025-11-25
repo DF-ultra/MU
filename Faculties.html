@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekelle University Campuses & Faculties</title>
+    <style>
+     
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0px;            
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #004a77; 
+            text-align: center;
+            border-bottom: 3px solid #004a77;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            margin-top:0px;
+        }
+
+        .campus-section {
+          
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 50px;           
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+
+        .campus-section h2 {
+            color: #d9534f; /* Accent color, e.g., Red/Maroon */
+            margin-top: 0;
+        }
+
+        .campus-content {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .text-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image-container {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+      a{
+          
+    text-decoration:none;
+    color:blue;
+    font-weight:500;
+    border-radius:10px;
+    padding:1px;
+  
+  }
+    nav {
+             border-radius:10px;
+          border:2px solid black;
+            display:flex;
+           justify-content:center;
+           margin:10px;
+           gap:10Px;
+            text-align:center;
+          
+      }
+            
+     @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                margin: 10px auto;
+            }
+           
+            .container h1{
+                font-size:25px;
+            }
+            .campus-section h2{
+                font-size: 20px;
+            }
+            nav  {       
+            display:flex;
+           justify-content:center;
+           margin:10px 0;
+           gap:0Px;
+            text-align:center;
+        }
+        nav a{
+   
+   width: 100%;
+    border:1px;
+    padding: 1px;
+    text-align:center;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <nav>
+      <a href="index.html"> Home </a> |
+           
+      <a href="faculties.html">Faculties</a> |
+      <a href="presidents.html">presidents</a> |
+      <a href="contact.html"> contact </a> | 
+      <a href="developer.html">developer</a> 
+    </nav>
+    <div class="container">
+        <h1>Mekelle University Campuses and Academic Units 🎓</h1>
+
+        <div class="campus-section">
+            <h2>🏠 Main Campus (Endayesus)</h2>
+            <div class="campus-content">
+                <div class="text-info">
+                    <p>The Main Campus (also known as Endayesus Campus) serves as the primary administrative and academic hub for the university. It hosts a diverse range of colleges and institutes focusing on foundational sciences, technology, and humanities.</p>
+                    <p><strong>Key Academic Units:</strong></p>
+                    <ul>
+                        <li>College of Natural and Computational Sciences</li>
+                        <li>College of Law and Governance</li>
+                        <li>College of Social Sciences and Languages</li>
+                        <li>College of Dryland Agriculture and Natural Resources Management (Sometimes referred to as part of the Main area)</li>
+                        <li>Ethiopian Institute of Technology - Mekelle (EiT-M) (Often at a separate but related site like Aynalem/MIT Campus, but academically grouped with Engineering/Technology)</li>
+                        <li>Various Institutes (e.g., Pedagogical Sciences, Paleo-Environment)</li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./image/Mc.jpeg" alt="Mekelle University Main Campus">
+                </div>
+            </div>
+        </div>
+
+        <div class="campus-section">
+            <h2>💼 Business Campus (Adi Haki)</h2>
+            <div class="campus-content">
+                <div class="text-info">
+                    <p>The Business Campus is dedicated to the fields of business, management, and economics. It has been a historical part of the university's development and focuses on fostering entrepreneurial and economic development skills.</p>
+                    <p><strong>Key Academic Unit:</strong></p>
+                    <ul>
+                        <li>College of Business and Economics (CBE), which includes departments like:
+                            <ul>
+                                <li>Management</li>
+                                <li>Economics</li>
+                                <li>Accounting and Finance</li>
+                                <li>Marketing Management</li>
+                                <li>Cooperative Programs</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./image/Bc.jpeg" alt="Mekelle University Business Campus">
+                </div>
+            </div>
+        </div>
+
+        <div class="campus-section">
+            <h2>🏥 Ayder Campus</h2>
+            <div class="campus-content">
+                <div class="text-info">
+                    <p>The Ayder Campus is the site of the university's health and medical disciplines, closely integrated with the **Ayder Comprehensive Specialized Hospital**. It is central to the training of healthcare professionals and medical research in the region.</p>
+                    <p><strong>Key Academic Unit:</strong></p>
+                    <ul>
+                        <li>College of Health Sciences(CHS), which includes Schools of:
+                            <ul>
+                                <li>Medicine (including Ayder Referral Hospital)</li>
+                                <li>Public Health</li>
+                                <li>Nursing</li>
+                                <li>Pharmacy</li>
+                                <li>Medical Laboratory Science</li>
+                                <li>Other Allied Health fields</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./image/Ac.jpeg" alt="Mekelle University Ayder Campus">
+                </div>
+            </div>
+        </div>
+
+        <div class="campus-section">
+            <h2>🐾 Veterinary Campus</h2>
+            <div class="campus-content">
+                <div class="text-info">
+                    <p>The Veterinary Campus (often dedicated to the College of Veterinary Sciences) focuses on animal health, livestock production, and veterinary public health. It plays a crucial role in supporting Ethiopia's agricultural sector.</p>
+                    <p><strong>Key Academic Unit:</strong></p>
+                    <ul>
+                        <li>College of Veterinary Science (CVS), with departments such as:
+                            <ul>
+                                <li>Veterinary Clinical Medicine and Epidemiology</li>
+                                <li>Veterinary Public</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./image/Vc.jpeg" alt="Mekelle University Ayder Campus">
+                </div>
+            </div>
+        </div>
+</body> 
+</html>                               

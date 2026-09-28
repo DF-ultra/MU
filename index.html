@@ -1,232 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" type="image/jpg" href="./image/icon.jpg">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Mekelle university</title>
-      <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        
-        header {
-            background-color:#0056b3; 
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
-            margin: -20px -20px 20px -20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.1em;
-            font-style: italic;
-        }
-
-        
-        section {
-            margin-bottom: 25px;
-            padding: 15px;
-            border-left: 5px solid #0056b3; 
-            background-color: #f9f9f9;
-            border-radius: 4px;
-        }
-        h2 {
-            color: #004d40;
-            border-bottom: 2px solid #009688;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
-
-        
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        li {
-            background-color: #e0f2f1; 
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 0.95em;
-            color: #004d40;
-            flex-grow: 1; 
-            text-align: center;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-
-        
-        @media (max-width: 600px) {
-            .container {
-                width: 95%;
-                margin: 10px auto;
-            }
-            header h1 {
-                font-size: 1.5em;
-            }
-            ul {
-                flex-direction: column; /* Stacks list items on small screens */
-            }
-            li {
-                flex-grow: 0;
-                width: 100%;
-                margin-bottom: 5px;
-            }
-            .head{
-            min-height: 100px;
-            text-align: center;
-            .head h1{
-                font-size: 1.5em;
-            }
-            .head p{
-                font-size: 0.9em;
-
-            }
-        }
-            nav  {       
-            display:flex;
-           justify-content:center;
-           margin:10px 0;
-           
-           gap:0Px;
-            text-align:center;
-        }
-        nav a{
-   display: flex;
-
-    width: 100%;
-    border:2px;
-    padding: 1px;
-    text-align:center;
-    box-sizing: border-box;
-    font-size: 10px;
-  }
-}
-
-     .head{
-           display:flex;
-           align-items:center;
-           color:white;
-           text-shadow:10px 10px 10px black;
-           background-image:url(./image/cover1.jpeg);
-           background-size: cover;
-           background-position: center;
-           background-repeat: no-repeat;
-           object-fit:fit;
-           padding:10px;
-           
-         }
-   
-     
-
-
-
-        nav {
-             border-radius:10px;
-          border: 2px solid black;
-            display:flex;
-           justify-content:center;
-           margin:10px;
-           gap:10Px;
-            text-align:center;
-          
-      }
-      a{
-    text-decoration:none;
-    color:blue;
-    font-weight:600;
-    border-radius:10px;
-    padding:1px;
-  }
-      </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekelle University | Excellence in Learning, Research & Impact</title>
+    <meta name="description"
+        content="Mekelle University is a premier public research university in Tigray, Ethiopia, leading dryland agriculture, medical health sciences, technology, and community development.">
+    <link rel="icon" type="image/png" href="./Image/logo.png">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <div class="brand">
+                <div class="brand-badge">
+                    <img src="./Image/logo.png" alt="Mekelle University Logo">
+                </div>
+                <span>Mekelle University</span>
+            </div>
 
-      <div class="head">
-  <div> <h1 style="margin : 0;" >Welcome to Mekelle University</h1>
-    <p>Excellence in Education, Research, and Community Service</p>
-      </div>
-      </div>
-   <nav>
-      <a href="index.html"> Home </a> |
-           
-      <a href="faculties.html">Faculties</a> |
-      <a href="./Presidents.html">Presidents</a> |
-      <a href="contact.html"> Contact </a> | 
-      <a href="developer.html">Developer</a> 
-    </nav>
-   
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">☰</button>
 
+            <nav class="nav" id="nav-menu" aria-label="Main navigation">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#faculties">Faculties</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#contact">Contact</a>
+                <button type="button" class="nav-item btn developer-trigger-btn" id="open-developer-modal">Developer
+                    Profile</button>
+            </nav>
+        </div>
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Mekelle University (MU)</h1>
-            <p>A Leading Public Research-Intensive Institution in Ethiopia</p>
-        </header>
+    <main class="page-shell" id="home">
+        <section class="hero">
+            <!-- Background Geometric Shapes (Pure Vector Shapes) -->
+            <div class="hero-bg-shapes" aria-hidden="true">
+                <svg class="hero-shape-grid" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="hero-grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#hero-grid-pattern)" />
+                </svg>
+                <div class="shape shape-rect-1"></div>
+                <div class="shape shape-circle-1"></div>
+                <div class="shape shape-polygon-1"></div>
+                <div class="shape shape-ring-1"></div>
+                <div class="shape shape-triangle-1"></div>
+            </div>
 
-        <section>
-            <h2>🏛️ Overview & Establishment</h2>
-            <p><strong>Mekelle University (MU)</strong> is a federal government-funded higher education institution located in Mekelle, Tigray Region, Ethiopia, approximately 783 km north of Addis Ababa. It was officially established in <strong>May 2000</strong> through the merger of two former institutions: the Mekelle Business College and Mekelle University College.</p>
-            <p>It is one of the largest public universities in Ethiopia, recognized for its commitment to teaching, research, and community engagement with an international reputation.</p>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Discover Excellence</span>
+                    <h1>Shaping futures through research, learning, and innovation.</h1>
+                    <p>Mekelle University is a leading public research-intensive institution in Ethiopia, committed to
+                        academic excellence, dryland development, and community impact.</p>
+
+                    <div class="hero-actions">
+                        <a href="#faculties" class="btn btn-primary">Explore Faculties &amp; Campuses</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <strong>2000</strong>
+                            <span>Established</span>
+                        </div>
+                        <div class="stat">
+                            <strong>7</strong>
+                            <span>Campuses</span>
+                        </div>
+                        <div class="stat">
+                            <strong>30K+</strong>
+                            <span>Students</span>
+                        </div>
+                        <div class="stat">
+                            <strong>20+</strong>
+                            <span>Colleges &amp; Institutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-panel">
+                    <div class="panel-card">
+                        <div class="panel-visual">
+                            <div class="mini-header">
+                                <span class="category">Academic Focus</span>
+                            </div>
+
+                            <div class="campus-card">
+                                <span class="label">University Mission</span>
+                                <h3>Excellence in Education, Research &amp; Sustainable Impact</h3>
+                                <p>Driving knowledge creation, dryland sustainability, and medical advancements for
+                                    Ethiopia and beyond.</p>
+                                <div class="tag-row">
+                                    <span class="tag">Dryland Science</span>
+                                    <span class="tag">Health &amp; Medicine</span>
+                                    <span class="tag">Engineering (EiT-M)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>🎯 Mission & Vision</h2>
-            <p><strong>Mission:</strong> MU is a research-intensive institution committed to pursuing excellence in research and innovation, teaching-learning, and community engagement. Its ultimate goal is to contribute to the advancement of knowledge, economic growth, and social welfare to national and international communities.</p>
-            <p><strong>Vision:</strong> Mekelle University aspires to become <strong>one of the top 25 research-intensive universities in Africa by 2025.</strong></p>
+        <!-- Why MU Stands Out -->
+        <section class="section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Mekelle University Stands Out</h2>
+                    <p>MU blends rigorous academic foundations with practical innovation, community outreach, and
+                        world-class regional research.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Established Leadership</h3>
+                        <p>Officially established in May 2000, Mekelle University has grown into one of Ethiopia's
+                            flagship public institutions.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3>Vision &amp; Mission</h3>
+                        <p>Centered on high-impact teaching, ground-breaking research, technology transfer, and
+                            sustainable community empowerment.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Global &amp; Regional Relevance</h3>
+                        <p>Specializing in dryland agriculture, water resources, public health, and industrial
+                            technologies tailored to societal needs.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>📚 Academic Structure</h2>
-            <p>The university is structured across several colleges and institutes, running a diverse range of programs (undergraduate, master's, and PhD).</p>
-            <h3>Main Colleges:</h3>
-            <ul>
-                <li>College of Business and Economics</li>
-                <li>College of Dryland Agriculture and Natural Resources Management</li>
-                <li>College of Health Sciences (including Ayder Referral Hospital)</li>
-                <li>College of Law and Governance</li>
-                <li>College of Natural and Computational Sciences</li>
-                <li>College of Social Sciences and Languages</li>
-                <li>College of Veterinary Science</li>
-            </ul>
-            <h3>Key Institutes include:</h3>
-            <ul>
-                <li>Ethiopian Institute of Technology - Mekelle (EiT-M)</li>
-                <li>Institute of Paleo-Environment and Heritage Conservation</li>
-                <li>Institute of Geo-Information and Earth Observation</li>
-                <li>Institute of Water and Environment</li>
-            </ul>
+        <!-- About MU Overview -->
+        <section class="section reveal" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Mekelle University</h2>
+                    <p>Building a top-tier research institution dedicated to regional and national growth.</p>
+                </div>
+
+                <div class="about-grid">
+                    <article class="info-card">
+                        <h3>Overview &amp; Establishment</h3>
+                        <p>Mekelle University is a federal government-funded higher education institution located in
+                            Mekelle, Tigray Region, approximately 783 km north of Addis Ababa.</p>
+                        <p>Formed through the merger of the Mekelle Business College and Mekelle University College, it
+                            serves as a primary academic powerhouse for the nation.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Academic Structure</h3>
+                        <p>The university operates across multiple specialized colleges offering comprehensive
+                            undergraduate, postgraduate, and doctoral degrees.</p>
+                        <ul class="pill-list">
+                            <li>Business &amp; Economics</li>
+                            <li>Dryland Agriculture</li>
+                            <li>Health Sciences</li>
+                            <li>Law &amp; Governance</li>
+                            <li>Natural Sciences</li>
+                            <li>EiT-M Engineering</li>
+                            <li>Veterinary Science</li>
+                            <li>Social Sciences</li>
+                        </ul>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Vision 2025 &amp; Impact</h3>
+                        <p><strong>Vision:</strong> To become one of the top 25 research-intensive universities in
+                            Africa by 2025.</p>
+                        <p>MU actively drives local transformation through free legal aid clinics, agricultural research
+                            extensions, and Ayder Referral Hospital healthcare services.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>💡 Key Focus Areas</h2>
-            <p>MU is known for its strong focus on Dryland Agriculture and Natural Resources Management, reflecting the ecological context of its region. The university actively engages in community services, including offering free legal aid and capacity building for local farmers in areas like conservative agriculture and irrigation.</p>
+        <!-- Faculties and Campuses -->
+        <section class="section reveal" id="faculties">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Faculties and Campuses</h2>
+                    <p>Modern academic hubs engineered to foster learning, technical innovation, and clinical research.
+                    </p>
+                </div>
+
+                <div class="faculty-layout">
+                    <article class="campus-card-box">
+                        <div class="campus-copy">
+                            <h3>Main Campus (Endayesus)</h3>
+                            <p>Serves as the university's central administrative and academic headquarters, housing
+                                foundational science, engineering, and humanities faculties.</p>
+                            <ul>
+                                <li>College of Natural &amp; Computational Sciences</li>
+                                <li>College of Law &amp; Governance</li>
+                                <li>College of Social Sciences &amp; Languages</li>
+                                <li>College of Dryland Agriculture</li>
+                                <li>Ethiopian Institute of Technology (EiT-M)</li>
+                            </ul>
+                        </div>
+                        <div class="campus-image">
+                            <img src="./Image/Mc.jpeg" alt="Mekelle University Main Campus">
+                        </div>
+                    </article>
+
+                    <article class="campus-card-box">
+                        <div class="campus-copy">
+                            <h3>Business Campus (Adi Haki)</h3>
+                            <p>Specializes in business administration, economics, and commercial research, serving as a
+                                hub for entrepreneurship and management training.</p>
+                            <ul>
+                                <li>College of Business &amp; Economics</li>
+                                <li>Department of Management</li>
+                                <li>Department of Economics</li>
+                                <li>Department of Accounting &amp; Finance</li>
+                                <li>Department of Marketing Management</li>
+                            </ul>
+                        </div>
+                        <div class="campus-image">
+                            <img src="./Image/Bc.jpeg" alt="Business Campus Adi Haki">
+                        </div>
+                    </article>
+
+                    <article class="campus-card-box">
+                        <div class="campus-copy">
+                            <h3>Ayder Health Campus</h3>
+                            <p>Houses health sciences and medical education, integrated directly with Ayder
+                                Comprehensive Specialized Hospital—the region's primary referral center.</p>
+                            <ul>
+                                <li>College of Health Sciences</li>
+                                <li>School of Medicine &amp; Public Health</li>
+                                <li>Department of Nursing &amp; Midwifery</li>
+                                <li>School of Pharmacy</li>
+                                <li>Medical Laboratory Sciences</li>
+                            </ul>
+                        </div>
+                        <div class="campus-image">
+                            <img src="./Image/Ac.jpeg" alt="Ayder Health Sciences Campus">
+                        </div>
+                    </article>
+
+                    <article class="campus-card-box">
+                        <div class="campus-copy">
+                            <h3>Veterinary Campus</h3>
+                            <p>Dedicated to animal medicine, livestock development, and public health, delivering
+                                critical support to East Africa's agricultural economy.</p>
+                            <ul>
+                                <li>College of Veterinary Medicine</li>
+                                <li>Veterinary Clinical Studies</li>
+                                <li>Epidemiology &amp; Preventive Medicine</li>
+                                <li>Veterinary Public Health</li>
+                            </ul>
+                        </div>
+                        <div class="campus-image">
+                            <img src="./Image/Vc.jpeg" alt="Veterinary Science Campus">
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
-    </div>
- 
 
+        <!-- Leadership and Presidents -->
+        <section class="section reveal" id="leadership">
+            <div class="container">
+                <div class="section-header">
+                    <h2>University Leadership &amp; Presidents</h2>
+                    <p>Distinguished leaders who have shaped Mekelle University's vision, academic governance, and
+                        international stature.</p>
+                </div>
 
- 
+                <div class="president-layout">
+                    <article class="president-card">
+                        <div class="president-avatar">
+                            <img src="./Image/Fana.jpg" alt="Dr. Fana Hagos">
+                        </div>
+                        <div class="president-meta">
+                            <div class="president-meta-header">
+                                <h3>Dr. Fana Hagos</h3>
+                                <span class="badge badge-current">Current President</span>
+                            </div>
+                            <span class="president-tenure">2021 – Present</span>
+                            <p>Previously served as President of the Tigray Regional Supreme Court for over 4 years.
+                                Holds a Ph.D. from the University of Warwick, UK.</p>
+                        </div>
+                    </article>
+
+                    <article class="president-card">
+                        <div class="president-avatar">
+                            <img src="./Image/Fetyen.jpeg" alt="Prof. Fetyen Abay">
+                        </div>
+                        <div class="president-meta">
+                            <div class="president-meta-header">
+                                <h3>Prof. Fetyen Abay</h3>
+                            </div>
+                            <span class="president-tenure">2020 – 2021</span>
+                            <p>Tenured professor of plant breeding and seed science; recognized as the first female
+                                lecturer at Mekelle University in 1993.</p>
+                        </div>
+                    </article>
+
+                    <article class="president-card">
+                        <div class="president-avatar">
+                            <img src="./Image/Kindeya.jpeg" alt="Prof. Kindeya Gebrehiwot">
+                        </div>
+                        <div class="president-meta">
+                            <div class="president-meta-header">
+                                <h3>Prof. Kindeya Gebrehiwot</h3>
+                            </div>
+                            <span class="president-tenure">2013 – 2020</span>
+                            <p>Full professor of forestry at Mekelle University. Earned his Ph.D. from the University of
+                                Göttingen, Germany in 2003.</p>
+                        </div>
+                    </article>
+
+                    <article class="president-card">
+                        <div class="president-avatar">
+                            <img src="./Image/joachim.jpg" alt="Dr. Joachim Herzig">
+                        </div>
+                        <div class="president-meta">
+                            <div class="president-meta-header">
+                                <h3>Dr. Joachim Herzig</h3>
+                            </div>
+                            <span class="president-tenure">2010 – 2013</span>
+                            <p>Holds a Ph.D. in Microbiology and a habilitation in Human Physiology from the University
+                                of Heidelberg, Germany.</p>
+                        </div>
+                    </article>
+
+                    <article class="president-card">
+                        <div class="president-avatar">
+                            <img src="./Image/Mitiku.jpeg" alt="Prof. Mitiku Haile">
+                        </div>
+                        <div class="president-meta">
+                            <div class="president-meta-header">
+                                <h3>Prof. Mitiku Haile</h3>
+                                <span class="badge badge-founding">Founding President</span>
+                            </div>
+                            <span class="president-tenure">2000 – 2010</span>
+                            <p>Widely honored as the founding president of Mekelle University. Professor of soil science
+                                and sustainable land management.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer reveal" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-column footer-brand">
+                <div class="brand">
+                    <div class="brand-badge">
+                        <img src="./Image/logo.png" alt="Mekelle University Logo">
+                    </div>
+                    <span>Mekelle University</span>
+                </div>
+                <p>Academic excellence, innovation, and community impact through research, education, and public
+                    service.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Information</h3>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2A10 10 0 1022 12 10 10 0 0012 2zm1 15h-2v-6h2zm0-8h-2V7h2z" />
+                                </svg>
+                            </span>Official Website
+                        </span>
+                        <a href="http://www.mu.edu.et" target="_blank" rel="noopener noreferrer">www.mu.edu.et</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </span>Email Address
+                        </span>
+                        <a href="mailto:ccia@mu.edu.et">ccia@mu.edu.et</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.37 2.4z" />
+                                </svg>
+                            </span>Telephone
+                        </span>
+                        <a href="tel:+251344404005">+251 344 40 40 05</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                                </svg>
+                            </span>P.O. Box
+                        </span>
+                        <span>231, Mekelle, Ethiopia</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow MU</h3>
+                <ul class="social-list">
+                    <li>
+                        <a class="social-link" href="https://www.facebook.com/MekelleUniversity" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="social-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M14 13.5h2.5l1-4H14v-2c0-1.03.7-1.5 1.5-1.5h1.5V2.14c-.52-.07-1.62-.14-2.77-.14-2.7 0-4.5 1.6-4.5 4.5v3H7v4h2.73V22h4.27v-8.5z" />
+                                </svg>
+                            </span>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="https://twitter.com/MekUniETH" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="social-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </span>
+                            <span>X (Twitter)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Mekelle University • Academic Excellence, Innovation, and Community Impact
+        </div>
+    </footer>
+
+    <!-- Native HTML5 Accessible Modal Dialog -->
+    <dialog id="developer-modal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="close-developer-modal" aria-label="Close Developer Profile">✕</button>
+            <div class="modal-header">
+                <div class="modal-avatar">
+                    <img src="./Image/developer.webp" alt="Dawit Fseha">
+                </div>
+                <div class="modal-header-info">
+                    <p class="kicker">Developer Profile</p>
+                    <h3>Dawit Fseha</h3>
+                    <span>Web Designer &amp; Full-Stack Developer</span>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="meta-row">
+                    <strong>Email</strong>
+                    <a href="mailto:dawitfseha@gmail.com">dawitfseha@gmail.com</a>
+                </div>
+                <div class="meta-row">
+                    <strong>Phone</strong>
+                    <a href="tel:+251992949485">+251 992 949 485</a>
+                </div>
+                <div class="meta-row">
+                    <strong>Facebook</strong>
+                    <a href="https://www.facebook.com/profile.php?id=61582862746401" target="_blank"
+                        rel="noopener noreferrer">@dave__df</a>
+                </div>
+                <div class="meta-row">
+                    <strong>portfolio</strong>
+                    <a href="https://df-ultra.github.io/portfolio/" target="_blank"
+                        rel="noopener noreferrer">df-ultra.github.io/portfolio/</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        // Scroll Reveal Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+        // Mobile Navigation Menu Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+            });
+        }
+
+        // Native HTML Dialog Modal Handling
+        const developerModal = document.getElementById('developer-modal');
+        const openModalBtn = document.getElementById('open-developer-modal');
+        const closeModalBtn = document.getElementById('close-developer-modal');
+
+        if (developerModal && openModalBtn && closeModalBtn) {
+            openModalBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                developerModal.showModal();
+            });
+
+            closeModalBtn.addEventListener('click', () => {
+                developerModal.close();
+            });
+
+            // Close when clicking on backdrop
+            developerModal.addEventListener('click', (e) => {
+                const dialogDimensions = developerModal.getBoundingClientRect();
+                if (
+                    e.clientX < dialogDimensions.left ||
+                    e.clientX > dialogDimensions.right ||
+                    e.clientY < dialogDimensions.top ||
+                    e.clientY > dialogDimensions.bottom
+                ) {
+                    developerModal.close();
+                }
+            });
+        }
+
+        // ScrollSpy Active Nav Highlight
+        const sections = document.querySelectorAll('section[id], main[id]');
+        const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
